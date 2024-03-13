@@ -14,7 +14,6 @@
 #endif
 
 #import "IGListAdapterUpdaterHelpers.h"
-#import "IGListDefaultExperiments.h"
 #import "IGListIndexSetResultInternal.h"
 #import "IGListMoveIndexPathInternal.h"
 #import "IGListReloadIndexPath.h"
@@ -38,7 +37,6 @@
     if (self = [super init]) {
         _transactionBuilder = [IGListUpdateTransactionBuilder new];
         _allowsReloadingOnTooManyUpdates = YES;
-        _experiments = IGListDefaultExperiments();
     }
     return self;
 }

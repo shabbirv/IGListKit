@@ -13,12 +13,11 @@
 #import <IGListDiffKit/IGListAssert.h>
 #endif
 #import "IGListAdapterUpdater.h"
+#import "IGListSupplementaryViewSource.h"
 
 #import "IGListArrayUtilsInternal.h"
 #import "IGListDebugger.h"
-#import "IGListDefaultExperiments.h"
 #import "IGListSectionControllerInternal.h"
-#import "IGListSupplementaryViewSource.h"
 #import "IGListTransitionData.h"
 #import "IGListUpdatingDelegate.h"
 #import "UICollectionViewLayout+InteractiveReordering.h"
@@ -64,8 +63,6 @@ typedef struct OffsetRange {
 
         _updater = updater;
         _viewController = viewController;
-
-        _experiments = IGListDefaultExperiments();
 
         [IGListDebugger trackAdapter:self];
     }
